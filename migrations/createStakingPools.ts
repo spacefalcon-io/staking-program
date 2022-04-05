@@ -14,7 +14,7 @@ export const createStakingPool = async (
 ) => {
   const tokenMint = new Token(
     provider.connection,
-    new PublicKey(FCON_ADDRESS.devnet),
+    new PublicKey(FCON_ADDRESS.mainnet),
     TOKEN_PROGRAM_ID,
     wallet.payer,
   );

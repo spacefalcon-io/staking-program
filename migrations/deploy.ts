@@ -28,7 +28,7 @@ module.exports = async function (provider: anchor.Provider) {
     stakingProgram,
     provider,
     wallet,
-    new anchor.BN(600),
+    new anchor.BN(7 * 86400),
     false,
   );
   console.log('Deploy 2 months lock pool...');
@@ -36,7 +36,7 @@ module.exports = async function (provider: anchor.Provider) {
     stakingProgram,
     provider,
     wallet,
-    new anchor.BN(3600),
+    new anchor.BN(60 * 86400),
     false,
   );
 };

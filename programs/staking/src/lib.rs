@@ -15,7 +15,7 @@ use std::convert::TryFrom;
 use std::convert::TryInto;
 use utils::*;
 
-declare_id!("A8FEb1JeMfwtVtqjjE1txZaFWTVd1e3vgio7qiMyufsC");
+declare_id!("5dAQP2JtgJ3vFKMi3McnXkut51PXfHuyXRJhFCofd13J");
 
 pub const PRECISION: u128 = u64::MAX as u128;
 pub const MIN_DURATION: u64 = 86400;

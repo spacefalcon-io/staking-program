@@ -6,12 +6,15 @@ staking = "A8FEb1JeMfwtVtqjjE1txZaFWTVd1e3vgio7qiMyufsC"
 [programs.devnet]
 staking = "A8FEb1JeMfwtVtqjjE1txZaFWTVd1e3vgio7qiMyufsC"
 
+[programs.mainnet]
+staking = "A8FEb1JeMfwtVtqjjE1txZaFWTVd1e3vgio7qiMyufsC"
+
 [registry]
 url = "https://anchor.projectserum.com"
 
 [provider]
-cluster = "localnet"
-wallet = "/home/user/.config/solana/id.json"
+cluster = "mainnet"
+wallet = "/Users/amitkolambikar/.config/solana/phantomWallet.json"
 
 [test]
 startup_wait = 10000

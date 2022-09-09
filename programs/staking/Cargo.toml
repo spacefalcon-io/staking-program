@@ -17,7 +17,7 @@ default = ["local-testing"]
 local-testing = []
 
 [dependencies]
-anchor-lang = "0.22.0"
-anchor-spl = "0.22.0"
-solana-program = "1.8.5"
+anchor-lang = "0.25.0"
+anchor-spl = "0.25.0"
+spl-associated-token-account = "1.0.5"
 spl-token = { version = "3.2.0", features = ["no-entrypoint"] }

@@ -1,20 +1,20 @@
 [features]
 seeds = false
 [programs.localnet]
-staking = "A8FEb1JeMfwtVtqjjE1txZaFWTVd1e3vgio7qiMyufsC"
+staking = "FffsMRFu9vFMfkTN4AGDfdSfwJmyN2ofFJGXTqhokv3o"
 
 [programs.devnet]
-staking = "A8FEb1JeMfwtVtqjjE1txZaFWTVd1e3vgio7qiMyufsC"
+staking = "FffsMRFu9vFMfkTN4AGDfdSfwJmyN2ofFJGXTqhokv3o"
 
 [programs.mainnet]
-staking = "A8FEb1JeMfwtVtqjjE1txZaFWTVd1e3vgio7qiMyufsC"
+staking = "FffsMRFu9vFMfkTN4AGDfdSfwJmyN2ofFJGXTqhokv3o"
 
 [registry]
 url = "https://anchor.projectserum.com"
 
 [provider]
-cluster = "mainnet"
-wallet = "/Users/amitkolambikar/.config/solana/phantomWallet.json"
+cluster = "devnet"
+wallet = "/Users/phongvu/.config/solana/phantom.json"
 
 [test]
 startup_wait = 10000

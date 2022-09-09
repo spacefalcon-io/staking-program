@@ -6,8 +6,9 @@ pub mod utils;
 
 use account::*;
 use anchor_lang::prelude::*;
+use anchor_lang::solana_program;
 use anchor_lang::solana_program::clock;
-use anchor_spl::token::{self};
+use anchor_spl::token;
 use context::*;
 use error::ErrorCode;
 use std::convert::Into;
@@ -15,7 +16,7 @@ use std::convert::TryFrom;
 use std::convert::TryInto;
 use utils::*;
 
-declare_id!("5dAQP2JtgJ3vFKMi3McnXkut51PXfHuyXRJhFCofd13J");
+declare_id!("FffsMRFu9vFMfkTN4AGDfdSfwJmyN2ofFJGXTqhokv3o");
 
 pub const PRECISION: u128 = u64::MAX as u128;
 pub const MIN_DURATION: u64 = 86400;

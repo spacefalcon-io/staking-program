@@ -8,8 +8,8 @@ use std::convert::TryInto;
 #[derive(Accounts)]
 #[instruction(pool_nonce: u8)]
 pub struct InitializePool<'info> {
-    /// CHECK: nothing to check.
-    pub authority: AccountInfo<'info>,
+    #[account(mut)]
+    pub authority: Signer<'info>,
 
     pub staking_mint: Box<Account<'info, Mint>>,
     #[account(
@@ -60,9 +60,10 @@ pub struct CreateUser<'info> {
         init,
         payer=owner,
         seeds = [
-            owner.key.as_ref(), 
+            owner.key.as_ref(),
             pool.to_account_info().key.as_ref()
         ],
+        space = Pool::SIZE,
         bump
     )]
     pub user: Box<Account<'info, User>>,
@@ -75,7 +76,7 @@ pub struct CreateUser<'info> {
 #[derive(Accounts)]
 pub struct Pause<'info> {
     #[account(
-        mut, 
+        mut,
         has_one = authority,
         constraint = !pool.paused @ ErrorCode::PoolPaused,
         constraint = pool.reward_duration_end < clock::Clock::get().unwrap().unix_timestamp.try_into().unwrap(),

@@ -39,6 +39,9 @@ pub struct Pool {
     /// client due to auto generated account size property
     pub funders: [Pubkey; 5],
 }
+impl Pool {
+    pub const SIZE: usize = 399;
+}
 
 #[account]
 #[derive(Default)]
@@ -59,4 +62,7 @@ pub struct User {
     pub tier: u8,
     /// Signer nonce.
     pub nonce: u8,
+}
+impl User {
+    pub const SIZE: usize = 115;
 }
